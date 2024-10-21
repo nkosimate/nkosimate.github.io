@@ -20,7 +20,14 @@ function Projects() {
       description: "Engineered a high-accuracy COVID-19 identification system with 98.4% accuracy, utilizing chest X-rays. Applied data augmentation too reduce the image unbalance and transfer learning techniques with ResNet and Xception models. Lastly developed a Streamlit application for users to test and try out for rapid diagnoses.",
       about:"Learn",
       githubLink: "https://github.com/your-username/project-3"
+    },
+    {
+      name: "Data Exploration with R ",
+      description: "A comprehensive data exploration process using R,",
+      about:"Key tasks include loading and inspecting the data, identifying and handling missing values in variables like pressure (imputed with the mean) and snowing (assumed to be \"No\" where missing). Irrelevant predictors such as Continent and ID were removed due to constant or unique values. The process involved cleaning categorical variables (e.g., converting \"y/n\" to \"Yes/No\") and transforming character data into numeric format. Visualizations like histograms and bar plots were created using ggplot2 to assess distributions. Key skills demonstrated include data cleaning, feature engineering, handling missing data, and basic visualization, showcasing proficiency in using R libraries such as caret, dplyr, and ggplot2 for exploratory data analysis.",
+      githubLink: "https://github.com/your-username/project-3"
     }
+    
   ];
 
   return (
