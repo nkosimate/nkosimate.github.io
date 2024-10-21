@@ -1,0 +1,21 @@
+/* Footer.css */
+footer {
+    color: #fff; /* White text color */
+    padding: 20px; /* Space around the content */
+    text-align: center; /* Center align the text */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Full width footer */
+    font-size: 14px; /* Font size */
+  }
+  
+  footer a {
+    color: #4caf50; /* Link color (Green) */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  footer a:hover {
+    color: #fff; /* Change link color on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+  

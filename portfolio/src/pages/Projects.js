@@ -3,18 +3,22 @@ import React from 'react';
 function Projects() {
   const projects = [
     {
-      name: "Customer Segmentation with K-Means",
-      description: "Analyzed customer data and segmented them using K-Means clustering.",
-      githubLink: "https://github.com/your-username/project-1"
-    },
-    {
-      name: "Sales Forecasting with Time Series",
-      description: "Used ARIMA to forecast future sales based on historical data.",
+      name: "Kick Detection in Oil & Gas Drilling Using LSTM-AE Networks ",
+      description: "Developed a real-time kick detection system using LSTM-AE networks, improving safety in oil and gas drilling.Pre-processed large sensor datasets for model training, achieved high accuracy in detecting kicks.Finishing off by building a Streamlit dashboard for real-time monitoring, significantly enhancing operational decision-making. The model had great accuracy of 91% and the streamlit dashboard helped an oil and gas engineer be able to quickly analyse the data.",
+      about:"Learn",
       githubLink: "https://github.com/your-username/project-2"
     },
     {
-      name: "Sentiment Analysis of Product Reviews",
-      description: "Applied NLP techniques to analyze product reviews and classify sentiments.",
+
+      name: "Computer Vision for Pneumonia Detection",
+      description: "Developed a deep learning model using CNNs and GANs to accurately detect pneumonia from chest X-rays, addressing dataset imbalance and demonstrating strong potential for clinical application.",
+      about: "In this project, I utilized deep learning techniques to enhance the accuracy of pneumonia detection from chest X-rays. By implementing a Convolutional Neural Network (CNN) architecture, specifically VGGNet and ResNet, the model was trained using a well-labeled dataset of X-rays for pneumonia and non-pneumonia patients. I also compared these models to transfer learning techniques to assess performance. Key strengths of the approach included data pre-processing, hyperparameter tuning, and thorough evaluation metrics (accuracy, precision, recall, F1-score, and AUC). Additionally, I used Generative Adversarial Networks (GANs) to address dataset imbalance, improving model training with augmented images.The results demonstrated the model’s high potential in clinical applications, such as assisting radiologists. However, challenges included difficulties in reproducing results and the use of only one dataset, limiting generalization. Future work will focus on expanding the dataset and refining reproducibility.",
+      githubLink: "https://github.com/nkosimate/Pneumonia-Detection.git"
+    },
+    {
+      name: "COVID-19 Identification System using Computer Vision ",
+      description: "Engineered a high-accuracy COVID-19 identification system with 98.4% accuracy, utilizing chest X-rays. Applied data augmentation too reduce the image unbalance and transfer learning techniques with ResNet and Xception models. Lastly developed a Streamlit application for users to test and try out for rapid diagnoses.",
+      about:"Learn",
       githubLink: "https://github.com/your-username/project-3"
     }
   ];
@@ -27,6 +31,7 @@ function Projects() {
           <li key={index}>
             <h2>{project.name}</h2>
             <p>{project.description}</p>
+            <p>{project.about}</p>
             <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
           </li>
         ))}
