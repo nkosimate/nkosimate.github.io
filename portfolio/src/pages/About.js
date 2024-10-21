@@ -1,4 +1,5 @@
 import React from 'react';
+import '../About.css'
 
 function About() {
     return (
@@ -18,17 +19,17 @@ function About() {
             <p>
                 <strong>MSc Data Science</strong> The Robert Gordon University 2023-2024<br />
                 Grade: Distinction<br />
-                Disertation: An Auto-encoder based Early Kick Detection for Automated Well Control
+                Dissertation: An Auto-encoder based Early Kick Detection for Automated Well Control <br />
                 I completed my MSc in Data Science, where I immersed myself in cutting-edge techniques and tools to solve real-world data challenges. The program offered a deep dive into the full data science pipeline, from data management and mining to advanced analytics and big data visualization.
                 Key Modules: Data Science Development, Advanced Data Management, Advanced Data Science, Big Data Analytics and Visualisation
             </p>
 
             <p>
                 <strong>BSc (Hons) Computer Science</strong> The Robert Gordon University 2020 - 2023<br /> 
-                Disertation: Building an Artificial Intelligent based solution using Computer Vision to detect Covid-19 from Chest X-Ray Images<br />
-                I completed an Honours degree in Computer Science where I was able to learn and gain the skills and ability to be a software Engineer. Ranging from Machine learning to to web development and cyber security, I was able to gain a deeper understanding of how the world of computing works.
-                Key Modules: Advanced artificial intelligence, Computer Vision Concurrent Programming, Advanced Software Development, Dynamic Web,
-                Development, Object, Oriented Programming
+                Dissertation: Building an Artificial Intelligent based solution using Computer Vision to detect Covid-19 from Chest X-Ray Images <br />
+                I completed an Honours degree in Computer Science where I was able to learn and gain the skills and ability to be a software Engineer. Ranging from Machine learning  to web development and cyber security, I was able to gain a deeper understanding of how the world of computing works.
+                Key Modules: Advanced artificial intelligence, Computer Vision, Concurrent Programming, Advanced Software Development, Dynamic Web,
+                Development, Object Oriented Programming
             </p>
 
             <p>
