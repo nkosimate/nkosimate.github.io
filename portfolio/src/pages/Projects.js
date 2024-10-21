@@ -25,13 +25,13 @@ function Projects() {
       name: "Data Exploration with R ",
       description: "A comprehensive data exploration process using R.",
       about: "Key tasks include loading and inspecting the data, identifying and handling missing values in variables like pressure (imputed with the mean) and snowing (assumed to be \"No\" where missing). Irrelevant predictors such as Continent and ID were removed due to constant or unique values. The process involved cleaning categorical variables (e.g., converting \"y/n\" to \"Yes/No\") and transforming character data into numeric format. Visualizations like histograms and bar plots were created using ggplot2 to assess distributions. Key skills demonstrated include data cleaning, feature engineering, handling missing data, and basic visualization, showcasing proficiency in using R libraries such as caret, dplyr, and ggplot2 for exploratory data analysis.",
-      githubLink: "https://github.com/your-username/project-3"
+      githubLink: "https://github.com/nkosimate/R-Data-Exploaration"
     },
     {
       name: "Data Warehousing ",
       description: "I implemented a star schema data warehouse with ETL processes and an OLAP cube for the Northwind dataset, enabling comprehensive sales and product analysis through SQL and MDX queries.",
       about: "In this project, I developed a star schema data warehouse for the Northwind dataset, enabling efficient analysis of product sales, discounts, and discontinued items. The key technical skills involved include designing a data warehouse using SQL, implementing ETL (Extract, Transform, Load) processes via Microsoft SQL Server Integration Services (SSIS), and utilizing PowerPivot for data modeling. I applied incremental ETL for updating data efficiently and created an OLAP cube for multidimensional analysis using MDX queries. This project enhanced my proficiency in database management, data warehousing, and data analytics, delivering a robust solution for business reporting.",
-      githubLink: "https://github.com/your-username/project-3"
+      githubLink: "https://github.com/nkosimate/Data-Warehousing"
     }
 
   ];
