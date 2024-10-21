@@ -1,57 +1,44 @@
-import React, { useState } from 'react';
+import React from 'react';
+import "../Contact.css"
+
+
+// Define the URLs for your GitHub, LinkedIn, and email
+const githubURL = 'https://github.com/nkosimate';  // Replace with your actual GitHub URL
+const linkedinURL = 'https://linkedin.com/in/nkosinathi-mate';  // Replace with your actual LinkedIn URL
+const emailAddress = 'mailto:nkosimate@gmail.com';  // Replace with your email
 
 function Contact() {
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Thanks for reaching out, ${form.name}!`);
-    // You could integrate an email API like EmailJS here for actual submissions.
-  };
-
   return (
     <section>
       <h1>Contact Me</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input
-            type="text"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            required
+      <div className="contact-links">
+        {/* GitHub Link */}
+        <a href={githubURL} target="_blank" rel="noopener noreferrer">
+          <img
+            src="../img/github.png"
+            alt="GitHub"
+            className="contact-icon"
           />
-        </label>
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            required
+        </a>
+
+        {/* LinkedIn Link */}
+        <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
+          <img
+            src="../img/linkedin.webp"
+            alt="LinkedIn"
+            className="contact-icon"
           />
-        </label>
-        <label>
-          Message:
-          <textarea
-            name="message"
-            value={form.message}
-            onChange={handleChange}
-            required
+        </a>
+
+        {/* Email Link */}
+        <a href={emailAddress}>
+          <img
+            src="../img/email.jpg"
+            alt="Email"
+            className="contact-icon"
           />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
+        </a>
+      </div>
     </section>
   );
 }
