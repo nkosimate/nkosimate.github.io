@@ -1,5 +1,8 @@
 import React from 'react';
 import "../Contact.css"
+import github from "../img/github.png"
+import linkedin from "../img/linkedin.webp"
+import mail from "../img/email.jpg"
 
 
 // Define the URLs for your GitHub, LinkedIn, and email
@@ -15,7 +18,7 @@ function Contact() {
         {/* GitHub Link */}
         <a href={githubURL} target="_blank" rel="noopener noreferrer">
           <img
-            src="../img/github.png"
+            src= {github}
             alt="GitHub"
             className="contact-icon"
           />
@@ -24,7 +27,7 @@ function Contact() {
         {/* LinkedIn Link */}
         <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
           <img
-            src="../img/linkedin.webp"
+            src={linkedin}
             alt="LinkedIn"
             className="contact-icon"
           />
@@ -33,7 +36,7 @@ function Contact() {
         {/* Email Link */}
         <a href={emailAddress}>
           <img
-            src="../img/email.jpg"
+            src={mail}
             alt="Email"
             className="contact-icon"
           />
