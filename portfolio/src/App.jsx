@@ -59,7 +59,7 @@ function App() {
           <section className="bg-blue-800 bg-opacity-30 p-6 rounded-lg shadow-inner w-full">
             <h2 className="text-xl font-semibold mb-3 border-b border-blue-600 pb-2">Skills</h2>
             <div className="flex flex-wrap gap-2 justify-center">
-              {['SQL', 'Python', 'R', 'Tableau', 'Excel', 'AWS','Statistical modelling', 'Scikit-learn','TensorFlow/PyTorch','Streamlit','Git','Hadoop','Spark','Apache Pig','Feature Engineering & Model Evaluation'].map((skill, index) => (
+              {['SQL', 'Python', 'R', 'Tableau', 'Excel', 'AWS','Statistical modelling', 'Scikit-learn','TensorFlow/PyTorch','Streamlit','Git','Hadoop','PySpark','Apache Pig','Feature Engineering & Model Evaluation'].map((skill, index) => (
                 <span key={index} className="px-3 py-1 bg-blue-600 text-blue-100 rounded-full text-xs font-medium shadow-sm transition-transform duration-200 hover:scale-105 hover:bg-blue-500">
                   {skill}
                 </span>
@@ -100,6 +100,8 @@ function App() {
                 </a>
               </div>
             </div>
+            
+            {/* AI Powered Data Analyst Assistant Project Card: Similar structure, also in blue tones. */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6 transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg">
               <img
                 src="https://placehold.co/300x150/3B82F6/ffffff?text=AI-Powered-Data-Analyst-Assistant" // Changed placeholder to blue for consistency
@@ -123,6 +125,10 @@ function App() {
                 </a>
               </div>
             </div>
+
+            {/* Add vertical space between project cards */}
+            <div className="my-4"></div>
+
             {/* Northwind Data Warehouse Project Card: Similar structure, also in blue tones. */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6 transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg">
               <img
