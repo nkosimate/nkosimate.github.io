@@ -100,7 +100,29 @@ function App() {
                 </a>
               </div>
             </div>
-
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6 transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg">
+              <img
+                src="https://placehold.co/300x150/3B82F6/ffffff?text=AI-Powered-Data-Analyst-Assistant" // Changed placeholder to blue for consistency
+                alt="AI Powered Data Analyst Assistant"
+                className="w-full md:w-2/5 rounded-lg object-cover shadow-sm"
+              />
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-2 text-blue-800">AI Powered Data Analyst Assistant</h3>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {['Python', 'OpenAI','LangChain','StreamLit','Plotly', 'Pandas'].map((tag, index) => (
+                    <span key={index} className="px-3 py-1 bg-blue-200 text-blue-800 rounded-full text-xs font-medium">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-4 text-sm">
+                  Designed and built an interactive AI assistant that enables natural language querying of CSV datasets using LLMs. Leveraged LangChain agents and OpenAI to interpret user questions, generate real-time Pandas logic, and produce dynamic visualisations via Plotly — all wrapped in a clean Streamlit interface. Showcased practical agentic workflows and real-world LLM integration to accelerate data exploration and decision-making without code or SQL.
+                  </p>
+                <a href="https://github.com/nkosimate/ai-data-analyst" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
+                  Read more <ChevronRight size={16} className="ml-1" />
+                </a>
+              </div>
+            </div>
             {/* Northwind Data Warehouse Project Card: Similar structure, also in blue tones. */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6 transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg">
               <img
