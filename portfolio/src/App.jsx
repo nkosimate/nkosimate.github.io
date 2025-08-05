@@ -118,7 +118,7 @@ function App() {
                   ))}
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-4 text-sm">
-                  Designed and built an interactive AI assistant that enables natural language querying of CSV datasets using LLMs. Leveraged LangChain agents and OpenAI to interpret user questions, generate real-time Pandas logic, and produce dynamic visualisations via Plotly — all wrapped in a clean Streamlit interface. Showcased practical agentic workflows and real-world LLM integration to accelerate data exploration and decision-making without code or SQL.
+                  Designed and built an interactive AI assistant that enables natural language querying of CSV datasets using LLMs. Leveraged LangChain agents and OpenAI to interpret user questions, generate real-time Pandas logic, and produce dynamic visualisations via Plotly, all wrapped in a clean Streamlit interface. Showcased practical agentic workflows and real-world LLM integration to accelerate data exploration and decision-making without code or SQL.
                   </p>
                 <a href="https://github.com/nkosimate/ai-data-analyst" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
                   Read more <ChevronRight size={16} className="ml-1" />
