@@ -123,6 +123,9 @@ function App() {
                 <a href="https://github.com/nkosimate/ai-data-analyst" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
                   Read more <ChevronRight size={16} className="ml-1" />
                 </a>
+                <a href="https://ai-data-analyst-nkosimate.streamlit.app/" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
+                  Try Now!!!! <ChevronRight size={16} className="ml-1" />
+                </a>
               </div>
             </div>
 
