@@ -28,7 +28,7 @@ function App() {
           />
           {/* Name and Role details */}
           <h1 className="text-3xl font-bold mb-1">Nkosinathi Mate</h1>
-          <p className="text-blue-200 text-lg mb-2">Graduate Data Scientist and Software Engineer</p>
+          <p className="text-blue-200 text-lg mb-2">Junior Data Scientist and Software Engineer</p>
           <p className="text-blue-300 text-sm mb-6">Aberdeen, United Kingdom</p>
 
           {/* Social Icons: Uses Lucide React icons for LinkedIn, GitHub, a generic file icon for Kaggle,
@@ -51,7 +51,7 @@ function App() {
           <section className="bg-blue-800 bg-opacity-30 p-6 rounded-lg mb-6 shadow-inner w-full">
             <h2 className="text-xl font-semibold mb-3 border-b border-blue-600 pb-2">About</h2>
             <p className="text-blue-100 leading-relaxed text-sm">
-              Results-oriented Data Scientist and Software Engineer with an MSc in Data Science (2024), experienced in Python, machine learning, and full-stack data solutions. I deliver end-to-end ML pipelines, building high-accuracy models for real-world impact in industrial safety and healthcare, and excel at communicating complex insights to diverse stakeholders
+              I build ML systems for high-stakes environments, focusing on anomaly detection to keep oil and gas drilling operations safe, pneumonia classification from chest X-rays, and NLP tools that cut analytics response time by 70%. MSc Distinction in Data Science, 2024. I write production code, explain models to non-technical stakeholders, and relocate for the right role.
             </p>
           </section>
 
@@ -96,7 +96,7 @@ function App() {
                   Developed an end-to-end kick detection solution for industrial safety, leveraging LSTM-AE deep learning models for 91% accuracy on complex drilling sensor data. Drove immediate operational value by building a Streamlit dashboard enabling real-time monitoring and critical decision support for oil & gas engineers.
                 </p>
                 <a href="https://github.com/nkosimate/LSTM-autoencoder" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
-                  Read more <ChevronRight size={16} className="ml-1" />
+                  Github <ChevronRight size={16} className="ml-1" />
                 </a>
               </div>
             </div>
@@ -121,10 +121,10 @@ function App() {
                   Designed and built an interactive AI assistant that enables natural language querying of CSV datasets using LLMs. Leveraged LangChain agents and OpenAI to interpret user questions, generate real-time Pandas logic, and produce dynamic visualisations via Plotly, all wrapped in a clean Streamlit interface. Showcased practical agentic workflows and real-world LLM integration to accelerate data exploration and decision-making without code or SQL.
                   </p>
                 <a href="https://github.com/nkosimate/ai-data-analyst" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
-                  Read more <ChevronRight size={16} className="ml-1" />
+                  Github <ChevronRight size={16} className="ml-1" />
                 </a>
                 <a href="https://ai-data-analyst-nkosimate.streamlit.app/" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
-                  Try Now!!!! <ChevronRight size={16} className="ml-1" />
+                  Live Demo <ChevronRight size={16} className="ml-1" />
                 </a>
               </div>
             </div>
