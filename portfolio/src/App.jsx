@@ -79,7 +79,7 @@ function App() {
                 and a "Read more" link with a subtle arrow icon. Cards have hover effects. */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md mb-8 flex flex-col md:flex-row items-center gap-6 transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg">
               <img
-                src="https://placehold.co/300x150/3B82F6/ffffff?text=Kick-Detection" // Changed placeholder to blue for consistency
+                src="/dash5.png" // Changed placeholder to a specific image for the kick detection project
                 alt="Kick Detection in Oil & Gas Drilling Using LSTM-AE Networks"
                 className="w-full md:w-2/5 rounded-lg object-cover shadow-sm"
               />
@@ -104,7 +104,7 @@ function App() {
             {/* AI Powered Data Analyst Assistant Project Card: Similar structure, also in blue tones. */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6 transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg">
               <img
-                src="https://placehold.co/300x150/3B82F6/ffffff?text=AI-Powered-Data-Analyst-Assistant" // Changed placeholder to blue for consistency
+                src="datagpt.png" // Changed placeholder to a specific image for the AI assistant project
                 alt="AI Powered Data Analyst Assistant"
                 className="w-full md:w-2/5 rounded-lg object-cover shadow-sm"
               />
