@@ -2,7 +2,8 @@ import image from "./img/image.png"
 // Import the necessary icons from lucide-react for a modern look
 import { Linkedin, Github, FileText, Mail, ChevronRight } from 'lucide-react';
 // Instead, using a placeholder image directly in the src attribute.
-
+import datagpt from "./img/datagpt.png"
+import dash5 from "./img/dash5.png"
 // Main App component which will now contain the entire portfolio layout
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
           />
           {/* Name and Role details */}
           <h1 className="text-3xl font-bold mb-1">Nkosinathi Mate</h1>
-          <p className="text-blue-200 text-lg mb-2">Junior Data Scientist and Software Engineer</p>
+          <p className="text-blue-200 text-lg mb-2">Graduate Data Scientist and Software Engineer</p>
           <p className="text-blue-300 text-sm mb-6">Aberdeen, United Kingdom</p>
 
           {/* Social Icons: Uses Lucide React icons for LinkedIn, GitHub, a generic file icon for Kaggle,
@@ -51,7 +52,7 @@ function App() {
           <section className="bg-blue-800 bg-opacity-30 p-6 rounded-lg mb-6 shadow-inner w-full">
             <h2 className="text-xl font-semibold mb-3 border-b border-blue-600 pb-2">About</h2>
             <p className="text-blue-100 leading-relaxed text-sm">
-              I build ML systems for high-stakes environments, focusing on anomaly detection to keep oil and gas drilling operations safe, pneumonia classification from chest X-rays, and NLP tools that cut analytics response time by 70%. MSc Distinction in Data Science, 2024. I write production code, explain models to non-technical stakeholders, and relocate for the right role.
+              ML systems for high-stakes environments: drilling safety, medical imaging, NLP. MSc Distinction. Production code, clear communication, open to relocation.
             </p>
           </section>
 
@@ -79,7 +80,7 @@ function App() {
                 and a "Read more" link with a subtle arrow icon. Cards have hover effects. */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md mb-8 flex flex-col md:flex-row items-center gap-6 transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg">
               <img
-                src="/img/dash5.png" // Changed placeholder to a specific image for the kick detection project
+                src={dash5} // Changed placeholder to a specific image for the kick detection project
                 alt="Kick Detection in Oil & Gas Drilling Using LSTM-AE Networks"
                 className="w-full md:w-2/5 rounded-lg object-cover shadow-sm"
               />
@@ -104,7 +105,7 @@ function App() {
             {/* AI Powered Data Analyst Assistant Project Card: Similar structure, also in blue tones. */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6 transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg">
               <img
-                src="/img/datagpt.png" // Changed placeholder to a specific image for the AI assistant project
+                src={datagpt}
                 alt="AI Powered Data Analyst Assistant"
                 className="w-full md:w-2/5 rounded-lg object-cover shadow-sm"
               />
