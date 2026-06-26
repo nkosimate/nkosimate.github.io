@@ -14,7 +14,7 @@ function HomePage() {
         <aside className="md:w-1/3 lg:w-1/4 p-6 md:p-8 bg-blue-700 text-white flex flex-col items-center text-center rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
           <img
             src={image}
-            alt="Profile photo of Nkosinathi Mate"
+            alt="Nkosinathi Mate"
             className="w-28 h-28 rounded-full mb-4 ring-4 ring-blue-300 object-cover transform transition-transform duration-300 hover:scale-105"
           />
           <h1 className="text-3xl font-bold mb-1">Nkosinathi Mate</h1>
