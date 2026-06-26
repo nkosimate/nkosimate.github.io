@@ -99,7 +99,7 @@ function HomePage() {
                 to="/projects"
                 className="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800"
               >
-                More <ChevronRight size={16} className="ml-1" />
+                More Projects <ChevronRight size={16} className="ml-1" />
               </Link>
             </div>
 
