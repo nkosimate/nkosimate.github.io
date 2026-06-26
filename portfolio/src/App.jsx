@@ -1,6 +1,6 @@
 import image from "./img/image.png";
 // Import the necessary icons from lucide-react for a modern look
-import { Linkedin, Github, FileText, Mail, ChevronRight } from "lucide-react";
+import { Linkedin, Github,Mail, ChevronRight } from "lucide-react";
 // Instead, using a placeholder image directly in the src attribute.
 import datagpt from "./img/datagpt.png";
 import dash5 from "./img/dash5.png";
