@@ -5,37 +5,24 @@ import { Linkedin, Github, FileText, Mail, ChevronRight } from "lucide-react";
 import datagpt from "./img/datagpt.png";
 import dash5 from "./img/dash5.png";
 import churn from "./img/churn.png";
-// Main App component which will now contain the entire portfolio layout
-function App() {
+import { Link, HashRouter, Routes, Route } from "react-router-dom";
+
+function HomePage() {
   return (
-    // The outermost container sets the background gradient, font, text color,
-    // and overall padding for the entire page, ensuring responsiveness.
-    // Changed gradient from purple to blue/cyan tones.
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-100 font-inter text-gray-800 antialiased p-4 sm:p-8 md:p-12">
-      {/* This inner container holds the main two-column layout (sidebar and main content).
-          It uses flexbox for desktop and stacks elements vertically on smaller screens.
-          It also applies a white background, rounded corners, and a shadow. */}
       <div className="container mx-auto flex flex-col md:flex-row gap-8 rounded-xl shadow-2xl overflow-hidden bg-white">
-        {/* Sidebar Section: This column holds the profile info, social links, about, and skills.
-            It has a distinct blue background and centers its content. */}
         <aside className="md:w-1/3 lg:w-1/4 p-6 md:p-8 bg-blue-700 text-white flex flex-col items-center text-center rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
-          {/* Profile Image: Using a placeholder image for now to resolve the build error.
-              If you want to use a specific image, ensure it's hosted online or placed
-              in the 'public' folder and referenced correctly (e.g., '/image.png'). */}
           <img
             src={image}
             alt="Profile photo of Nkosinathi Mate"
             className="w-28 h-28 rounded-full mb-4 ring-4 ring-blue-300 object-cover transform transition-transform duration-300 hover:scale-105"
           />
-          {/* Name and Role details */}
           <h1 className="text-3xl font-bold mb-1">Nkosinathi Mate</h1>
           <p className="text-blue-200 text-lg mb-2">
             Graduate Data Scientist and Software Engineer
           </p>
           <p className="text-blue-300 text-sm mb-6">Aberdeen, United Kingdom</p>
 
-          {/* Social Icons: Uses Lucide React icons for LinkedIn, GitHub, a generic file icon for Kaggle,
-              and a Mail icon for the email button. Each icon has a hover effect. */}
           <div className="flex justify-center items-center space-x-4 mb-8">
             <a
               href="https://www.linkedin.com/in/nkosinathi-mate/"
@@ -51,7 +38,6 @@ function App() {
             >
               <Github size={24} strokeWidth={1.5} />
             </a>
-            {/* Email Button: Styled as a rounded button with text and a mail icon. */}
             <a
               href="mailto:nkosimate@gmail.com"
               className="flex items-center space-x-2 px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold hover:bg-blue-400 transition-colors duration-200 shadow-md"
@@ -61,7 +47,6 @@ function App() {
             </a>
           </div>
 
-          {/* About Section: Provides a brief description, with a subtle blue background and border. */}
           <section className="bg-blue-800 bg-opacity-30 p-6 rounded-lg mb-6 shadow-inner w-full">
             <h2 className="text-xl font-semibold mb-3 border-b border-blue-600 pb-2">
               About
@@ -73,7 +58,6 @@ function App() {
             </p>
           </section>
 
-          {/* Skills Section: Displays skills as rounded badges with a hover effect, in blue tones. */}
           <section className="bg-blue-800 bg-opacity-30 p-6 rounded-lg shadow-inner w-full">
             <h2 className="text-xl font-semibold mb-3 border-b border-blue-600 pb-2">
               Skills
@@ -107,20 +91,21 @@ function App() {
           </section>
         </aside>
 
-        {/* Main Content Section: This column displays projects, experience, and education.
-            It has a white background and generous padding. */}
         <section className="flex-1 p-6 md:p-10 lg:p-12 bg-white rounded-b-xl md:rounded-r-xl md:rounded-bl-none">
-          {/* Projects Section */}
           <section className="mb-10">
-            <h2 className="text-3xl font-bold text-blue-700 mb-6 border-b-2 border-blue-200 pb-3">
-              Projects
-            </h2>
+            <div className="flex items-center justify-between gap-4 mb-6 border-b-2 border-blue-200 pb-3">
+              <h2 className="text-3xl font-bold text-blue-700">Projects</h2>
+              <Link
+                to="/projects"
+                className="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800"
+              >
+                More <ChevronRight size={16} className="ml-1" />
+              </Link>
+            </div>
 
-            {/* Kick-Detection Project Card: Each project is a card with an image, title, tags, description,
-                and a "Read more" link with a subtle arrow icon. Cards have hover effects. */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md mb-8 flex flex-col md:flex-row items-center gap-6 transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg">
               <img
-                src={dash5} // Changed placeholder to a specific image for the kick detection project
+                src={dash5}
                 alt="Kick Detection in Oil & Gas Drilling Using LSTM-AE Networks"
                 className="w-full md:w-2/5 rounded-lg object-cover shadow-sm"
               />
@@ -161,7 +146,6 @@ function App() {
               </div>
             </div>
 
-            {/* AI Powered Data Analyst Assistant Project Card: Similar structure, also in blue tones. */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6 transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg">
               <img
                 src={datagpt}
@@ -214,10 +198,8 @@ function App() {
               </div>
             </div>
 
-            {/* Add vertical space between project cards */}
             <div className="my-4"></div>
 
-            {/* Customer Churn Prediction Project Card */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6 transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg">
               <img
                 src={churn}
@@ -270,7 +252,6 @@ function App() {
             </div>
           </section>
 
-          {/* Experience Section: Displays work experience details with dates and relevant skills. */}
           <section className="mb-10">
             <h2 className="text-3xl font-bold text-blue-700 mb-6 border-b-2 border-blue-200 pb-3">
               Experience
@@ -313,7 +294,6 @@ function App() {
             </div>
           </section>
 
-          {/* Education Section: Displays education details, now with blue accents. */}
           <section>
             <h2 className="text-3xl font-bold text-blue-700 mb-6 border-b-2 border-blue-200 pb-3">
               Education
@@ -337,6 +317,53 @@ function App() {
         </section>
       </div>
     </div>
+  );
+}
+
+function ProjectsPage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-100 p-6 sm:p-10 md:p-12">
+      <div className="mx-auto max-w-4xl rounded-xl bg-white p-8 shadow-2xl">
+        <Link to="/" className="mb-6 inline-flex items-center text-blue-600 hover:text-blue-800">
+          ← Back Home
+        </Link>
+        <h1 className="mb-4 text-4xl font-bold text-blue-700">Projects</h1>
+        <p className="mb-8 text-gray-700">
+          A closer look at the data science and software projects I have built.
+        </p>
+        <div className="space-y-6">
+          <div className="rounded-lg border border-blue-100 bg-blue-50 p-6">
+            <h2 className="text-xl font-semibold text-blue-800">Kick Detection in Oil & Gas Drilling</h2>
+            <p className="mt-2 text-gray-700">
+              An LSTM-autoencoder approach for industrial safety monitoring and decision support system.
+            </p>
+          </div>
+          <div className="rounded-lg border border-blue-100 bg-blue-50 p-6">
+            <h2 className="text-xl font-semibold text-blue-800">AI Powered Data Analyst Assistant</h2>
+            <p className="mt-2 text-gray-700">
+              A conversational agent that turns natural language questions into insights from CSV data.
+            </p>
+          </div>
+          <div className="rounded-lg border border-blue-100 bg-blue-50 p-6">
+            <h2 className="text-xl font-semibold text-blue-800">Customer Churn Prediction</h2>
+            <p className="mt-2 text-gray-700">
+              A machine learning pipeline that identifies at-risk customers and highlights retention drivers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+      </Routes>
+    </HashRouter>
   );
 }
 
